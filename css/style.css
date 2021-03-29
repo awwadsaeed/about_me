@@ -1,0 +1,14 @@
+body{
+    margin: 8px; 
+   background-color: bisque;
+}
+body header{
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+body header h1{  
+    font-size: 24px;
+    font-weight: bold;
+}
