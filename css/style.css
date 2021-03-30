@@ -1,13 +1,65 @@
 body{
-    margin: 8px; 
-   background-color: bisque;
+   margin: 8px; 
+   background-color:#f3f4ed;
 }
 body header{
-    height: 80px;
+    background-color:#dddddd;
     margin-bottom: 10px;
+    height: 100px;
+}
+body header div{
+    height:100%;
+    display: inline-block;
+    width: 40%;
+}
+body header div img{
+    height: 100%;
+    width:95px;
+    float: left;
 }
 
-body header h1{  
+body header div h1{  
     font-size: 24px;
     font-weight: bold;
+    vertical-align: middle;
+    line-height: 100px;
+
+}
+body main{
+    background-color:#dddddd;
+    padding: 5px;
+    height:500px;
+}
+ol{
+    counter-reset: my_counter;
+}
+ol li::before{
+    counter-increment: my_counter;
+    content: counter(my_counter)". ";
+    font-weight: bold;
+}
+ol li{
+    margin-left:8px;
+}
+ul li{
+    margin-left:8px;
+}
+
+ul li::before{
+  content:"~ ";
+  font-weight: 900;
+}
+
+h2{
+    font-weight:bolder;
+    margin-bottom:5px;
+}
+footer{
+    font-weight: bold;
+    margin-top:10px;
+    height: 60px;
+    background-color:#dddddd;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
 }
