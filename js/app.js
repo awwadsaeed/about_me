@@ -100,21 +100,24 @@ function questionFifth() {
             console.log('you did not answer with a yes or a no');
     }
 }
-let guessNumber;
-for (let i = 0; i < 4; i++) {
-    guessNumber = prompt('guess a number between 1 and 20 inclusive');
-    let attemptsRemaining = 3 - i;
-    if (guessNumber > 7) {
-        alert('wrong answer, too high. ' + attemptsRemaining + ' attempts remaing');
-    } else if (guessNumber < 7) {
-        alert('wrong answer, too low. ' + attemptsRemaining + ' attempts remaing');
-    } else {
-        alert('good job you guessed the right number');
-        score++;
-        break;
-    }
-    if (i == 3) {
-        alert('failed to guess correctly, the correct number is 7');
+
+function questionsix() {
+    let guessNumber;
+    for (let i = 0; i < 4; i++) {
+        guessNumber = prompt('guess a number between 1 and 20 inclusive');
+        let attemptsRemaining = 3 - i;
+        if (guessNumber > 7) {
+            alert('wrong answer, too high. ' + attemptsRemaining + ' attempts remaing');
+        } else if (guessNumber < 7) {
+            alert('wrong answer, too low. ' + attemptsRemaining + ' attempts remaing');
+        } else {
+            alert('good job you guessed the right number');
+            score++;
+            break;
+        }
+        if (i == 3) {
+            alert('failed to guess correctly, the correct number is 7');
+        }
     }
 }
 
