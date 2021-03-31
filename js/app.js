@@ -1,6 +1,9 @@
 'use strict';
 let score = 0;
-let tall = prompt('do you think im tall');
+
+function questionOne () {
+    
+    let tall = prompt('do you think im tall');
 switch(tall.toLowerCase()){
     case 'no':
     case 'n':
@@ -14,8 +17,14 @@ switch(tall.toLowerCase()){
         score++;
         break;
     default:
-        console.log('you did not answer with a yes or a no');
+        console.log('you did not answer with a yes or a no');}
 }
+
+
+    
+
+
+
 
 let hairColor = prompt('do think my hair color is pink');
 switch(hairColor.toLowerCase()){
