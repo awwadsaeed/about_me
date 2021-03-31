@@ -145,6 +145,14 @@ function questionSeven() {
     }
 }
 
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionsix();
+questionSeven();
+
 let userName = prompt('plz enter your name');
 alert('welcome ' + userName + ' to my humble website');
 alert('this website has a little info about me, hope you like it and enjoy your visit ' + userName);
