@@ -84,13 +84,7 @@ switch(cofeeLike.toLowerCase()){
         console.log('you did not answer with a yes or a no');
 }
 
-
-let userName = prompt('plz enter your name');
-
-alert('welcome '+userName+' to my humble website');
-alert('this website has a little info about me, hope you like it and enloy your visit mr '+userName);
-
-    let guessNumber;
+let guessNumber;
 for(let i=0;i<4;i++){
     guessNumber=prompt('guess a number between 1 and 20 inclusive');
     let attemptsRemaining= 3-i;
@@ -108,23 +102,30 @@ for(let i=0;i<4;i++){
     }
 }
 
-let colors = ['pink','green','blue','purple','brown','black','red','yellow','cyan'];
+let colors = ['red','green','blue'];
 let guessColor;
-for(let i=0;i<6;i++){
+mainLoop1:for(let i=0;i<6;i++){
+
     let attemptsRemaining = 5-i;
-    guessColor=prompt('what is my favourite color out of these: \n'+ colors);
+    guessColor=prompt('what is my favourite color');
     guessColor.toLowerCase();
-    if(guessColor == 'brown'){
+
+   for(let j=0; j<colors.length;j++){
+    if(guessColor == colors[j]){
         score++;
-        alert('good job you got the correct answer');
-        break;
-    }else{
-        alert('wrong answer '+ attemptsRemaining + ' attempts remaining');
+        alert('good job you got the correct answer\n the correct answers are:\n'+ colors);
+        break mainLoop1;
     }
+   }
+   alert('wrong answer, '+attemptsRemaining+' attempts remaing')
     if(i == 5){
-        alert('faild to guess correctly, the correct color is brown');
+        alert('faild to guess correctly, the correct colors are:\n'+colors);
     }
 }
+
+let userName = prompt('plz enter your name');
+alert('welcome '+userName+' to my humble website');
+alert('this website has a little info about me, hope you like it and enjoy your visit '+userName);
 alert('your overall score is '+score+' out of 7');
 
  
