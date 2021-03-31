@@ -44,6 +44,7 @@ switch(hairColor.toLowerCase()){
 }
 }
 
+function questionThree (){
 let weight = prompt('do you think im fat');
 switch(weight.toLowerCase()){
     case 'no':
@@ -59,6 +60,7 @@ switch(weight.toLowerCase()){
         break;
     default:
         console.log('you did not answer with a yes or a no');
+}
 }
 
 let teaLike = prompt('do you think i like tea');
