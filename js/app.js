@@ -82,7 +82,7 @@ function questionFour() {
             console.log('you did not answer with a yes or a no');
     }
 }
-function questionFifth() {
+function questionFive() {
     let cofeeLike = prompt('do you think i like coffee');
     switch (cofeeLike.toLowerCase()) {
         case 'no':
@@ -121,24 +121,27 @@ function questionsix() {
     }
 }
 
-let colors = ['red', 'green', 'blue'];
-let guessColor;
-mainLoop1: for (let i = 0; i < 6; i++) {
+function questionSeven() {
+    let colors = ['red', 'green', 'blue'];
+    let guessColor;
+    mainLoop1: for (let i = 0; i < 6; i++) {
 
-    let attemptsRemaining = 5 - i;
-    guessColor = prompt('what is my favourite color');
-    guessColor.toLowerCase();
+        let attemptsRemaining = 5 - i;
+        guessColor = prompt('what is my favourite color');
+        guessColor.toLowerCase();
 
-    for (let j = 0; j < colors.length; j++) {
-        if (guessColor == colors[j]) {
-            score++;
-            alert('good job you got the correct answer\n the correct answers are:\n' + colors);
-            break mainLoop1;
+        for (let j = 0; j < colors.length; j++) {
+            if (guessColor == colors[j]) {
+                score++;
+                alert('good job you got the correct answer\n the correct answers are:\n' + colors);
+                break mainLoop1;
+            }
         }
-    }
-    alert('wrong answer, ' + attemptsRemaining + ' attempts remaing')
-    if (i == 5) {
-        alert('faild to guess correctly, the correct colors are:\n' + colors);
+
+        alert('wrong answer, ' + attemptsRemaining + ' attempts remaing')
+        if (i == 5) {
+            alert('faild to guess correctly, the correct colors are:\n' + colors);
+        }
     }
 }
 
