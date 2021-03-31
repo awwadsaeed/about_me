@@ -63,6 +63,7 @@ switch(weight.toLowerCase()){
 }
 }
 
+function questionFour (){
 let teaLike = prompt('do you think i like tea');
 switch(teaLike.toLowerCase()){
     case 'no':
@@ -78,6 +79,7 @@ switch(teaLike.toLowerCase()){
         break;
     default:
         console.log('you did not answer with a yes or a no');
+}
 }
 let cofeeLike = prompt('do you think i like coffee');
 switch(cofeeLike.toLowerCase()){
