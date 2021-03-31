@@ -25,7 +25,7 @@ switch(tall.toLowerCase()){
 
 
 
-
+function questionTwo (){
 let hairColor = prompt('do think my hair color is pink');
 switch(hairColor.toLowerCase()){
     case 'no':
@@ -41,6 +41,7 @@ switch(hairColor.toLowerCase()){
         break;
     default:
         console.log('you did not answer with a yes or a no');
+}
 }
 
 let weight = prompt('do you think im fat');
