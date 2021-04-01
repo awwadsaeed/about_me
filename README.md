@@ -4,3 +4,6 @@ a simple website that asks the users a y/n questions about the developer and giv
 
 **Author: Saeed Awwad**
 
+assissted with the code:
+- mohammad zaytoon
+ - wraping the logic in functions.
