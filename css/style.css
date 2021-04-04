@@ -3,9 +3,20 @@ body{
    background-color:#f3f4ed;
 }
 body header{
+
     background-color:#dddddd;
     margin-bottom: 10px;
     height: 100px;
+}
+#navi{
+    float: right;
+    width: 20%;
+    line-height: 100px;
+    vertical-align: middle;
+} 
+body header div nav ul li{
+    display: inline-block;
+    margin: 5px;
 }
 body header div{
     height:100%;
@@ -29,8 +40,17 @@ body main{
     background-color:#dddddd;
     padding: 5px;
     height:500px;
+    position: relative;
+}
+#secondHeader{
+    position: absolute;
+    right:43px;
+    top:8px;
 }
 ol{
+    position:absolute;
+    right: 0px;
+    top:25px;
     counter-reset: my_counter;
 }
 ol li::before{
@@ -62,4 +82,14 @@ footer{
     line-height: 60px;
     vertical-align: middle;
     text-align: center;
+}
+#Education{
+    position: absolute;
+    right:500px;
+    top: 25px;
+}
+#firstHeader{
+    position: absolute;
+    right:678px;
+    top:8px;   
 }
